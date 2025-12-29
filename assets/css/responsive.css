@@ -1,0 +1,66 @@
+/* screen size 1400px */
+@media only screen and (max-width: 1440px){
+  /* header */
+  header .menu-icon{
+    display: none;
+  }
+ 
+  /* footer */
+.footer-slider{
+  display: none;
+  }
+}
+/* screen size 1199px */
+@media only screen and (max-width: 1199px){
+	
+}
+/* screen size 1024px */
+@media only screen and (max-width: 1024px){
+	
+}
+/* screen size 768px */
+
+@media only screen and (max-width: 768px){
+  header nav{
+    display: none;
+  }
+	
+    header .menu-icon{
+    display:block;
+  }
+  /* banner */
+  .banner-section{
+    text-align: center;
+  }
+  /* Digital account and debit cart section */
+  .digital-zero-balance{
+    flex-direction: column;
+  }
+  .jio-debit-card{
+     flex-direction: column;
+  }
+  /* Why bank on us section sart */
+  .jio-bank-benefit{
+    flex-direction: column;
+  }
+  .why-bank-on-us-section-headings{
+    text-align: start;
+  }
+ 
+  /* banking_and_personal-finance-blog */
+  
+  .all-blogs{
+    flex-direction: column;
+  }
+  /* footer */
+
+  .footer-content-div1{
+    display: none;
+  }
+  /* footer slider */
+  .footer-slider{
+    display: block;
+  }
+  }
+
+  

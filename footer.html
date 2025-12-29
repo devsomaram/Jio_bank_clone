@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ALPINE JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- BOOTSTRAP -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      .footer-content-header{
+        display: flex;
+        justify-content: space-between;
+      }
+   .footer-slider-content i{
+   color: rgb(222, 142, 12);
+   font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+  <!-- for 768px screen -->
+   <!--footer-slider satrt  -->
+   <div class="footer-slider" 
+    x-data="{ activeIndex: null,open: false }">
+    <div class="container">
+      <div class="footer-slider-content">
+          <div 
+          @click="activeIndex === 0 ? activeIndex = null : activeIndex = 0,open = !open
+           " class="footer-content-header  align-item-center">
+            <h3>Useful Links</h3>
+           <div class="footer-slider-icon">
+             <i class="bi":class="open ? 'bi-dash' : 'bi-plus' "></i>
+             </div>
+          </div>
+          <div x-show="activeIndex === 0 " class="footer-content-bottom">
+            <ul>
+            <li><a href="#">Interest Rates & Service Charges</a></li>
+            <li><a href="#">Claim Form</a></li>
+            <li><a href="#">Complaint Form</a></li>
+            <li><a href="#">Grievance Redressal</a></li>
+            <li><a href="#">Reporting Unauthorised Transactions</a></li>
+            <li><a href="#">List of Bharat Bill Payment Operating Unit - Agent Institution(s)</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">RBI Kehta Hai</a></li>
+          </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-slider-content">
+          <div @click="activeIndex === 1 ? activeIndex = null : activeIndex = 1,
+          open = !open
+          " class="footer-content-header">
+             <h3>Our Company</h3>
+             <div class="footer-slider-icon">
+             <i class="bi":class="open ? 'bi-dash' : 'bi-plus' "></i>
+           </div>
+          </div>
+          <div x-show="activeIndex === 1" class="footer-content-bottom">
+         <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Top Management</a></li>
+            <li><a href="">Investor Relations</a></li>
+            <li><a href="">Regulatory Disclosure</a></li>
+          </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-slider-content">
+          <div @click="activeIndex === 2 ? activeIndex = null : activeIndex = 2,
+          open = !open
+          " class="footer-content-header">
+            <h3>Banking Outlets</h3>
+              <div class="footer-slider-icon">
+            <i class="bi":class="open ? 'bi-dash' : 'bi-plus' "></i>
+           </div>
+          </div>
+          <div x-show="activeIndex === 2" class="footer-content-bottom">
+           <ul>
+            <li><a href="">List of Banking Outlets</a></li>
+            <li><a href="">Details of Business Correspondent</a></li>
+            <li><a href="">DGRO Sitting Location & Visit Schedule</a></li>
+          </ul>
+        </div>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-slider-content">
+          <div @click="activeIndex === 3 ? activeIndex = null : activeIndex = 3,
+          open = !open
+          " class="footer-content-header">
+            <h3>Legal</h3>
+             <div class="footer-slider-icon">
+            <i class="bi":class="open ? 'bi-dash' : 'bi-plus' "></i>
+           </div>
+          </div>
+          <div x-show="activeIndex === 3" class="footer-content-bottom">
+            <ul>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">UPI Terms & Conditions</a></li>
+            <li><a href="">UPI User Guidelines</a></li>
+            <li><a href="">Merchant Terms & Conditions for UPI</a></li>
+            <li><a href="">Key Policies</a></li>
+          </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-slider-content">
+          <div @click="activeIndex === 4 ? activeIndex = null : activeIndex = 4,
+          open = !open
+          " class="footer-content-header">
+            <h3>Support</h3>
+              <div class="footer-slider-icon">
+             <i class="bi":class="open ? 'bi-dash' : 'bi-plus' "></i>
+           </div>
+          </div>
+          <div x-show="activeIndex === 4" class="footer-content-bottom">
+           <ul>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Emailwe.care@jiobank.in</a></li>
+            <li><a href="">Helpline No.1800 890 7070</a></li>
+          </ul>
+          </div>
+        </div>
+        <hr>
+     </div>
+   </div>
+    <!--footer-slider end  -->
+  </body>
+</html>

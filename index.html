@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Digital solution by Jio Bank</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- ALPINE JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- BOOTSTRAP ICON -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- CUSTOM CSS -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+ </head>
+<body x-data="{ open: false}">
+  <!-- menu-slider start-->
+    <div class="menu-slider" :class="{ 'show': open }">
+    <div class="container">
+      <div class="menu-slider-close-btn" @click="open = false">
+        <a href="#">&times;</a>
+      </div>
+      <ul class="d-flex gap-30">
+        <li class="menu-list"><a href="#">Home</a></li>
+        <hr>
+        <li class="menu-list"><a href="#">Accounts</a><img src="./assets/images/chevron_right .png" alt=""></li>
+        <hr>
+        <li class="menu-list"><a href="#">Payments</a><img src="./assets/images/chevron_right .png" alt=""></li>
+        <hr>
+        <li class="menu-list"><a href="#">Cards</a><img src="./assets/images/chevron_right .png" alt=""></li>
+        <hr>
+        <li class="menu-list"><a href="#">Blogs</a><img src="./assets/images/chevron_right .png" alt=""></li>
+        <hr>
+        <li class="menu-list"><a href="#">Our company</a><img src="./assets/images/chevron_right .png" alt=""></li>
+        <hr>
+      </ul>
+    </div>
+  </div>
+          <!-- menuber end-->
+  <!-- header start-->
+  <header>
+    <div class="container">
+      <div class="d-flex gap-50px align-item-center p-top-bottom-10">
+         <div class="brand-logo d-flex gap-10 align-item-center">
+          <!-- menu-icon -->
+          <div class="menu-icon" @click="open = true">
+          <img src="./assets/images/menu.png" alt="Menu Icon">
+          </div>
+          <div class="logo">
+            <a href="#" class="d-flex align-item-center gap-10">
+            <img src="./assets/images/logo-bank-log.svg" alt="" />
+            <div class="logo-text">
+              <span>Payment </span>
+              <span style="display: block">Bank Ltd.</span>
+            </div>
+          </a>
+          </div>
+        </div>
+        <nav>
+          <ul class="d-flex gap-30">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="list-hover"><a href="#">Accounts</a></li>
+            <li class="list-hover"><a href="#">Payments</a></li>
+            <li class="list-hover"><a href="#">Cards</a></li>
+            <li class="list-hover"><a href="#">Blogs</a></li>
+            <li class="list-hover"><a href="#">Our company</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- header end-->
+<div class="all-section-wrap p-tp-btm-50px">
+    <div class="container">
+      <!-- Banner section start-->
+      <section class="banner-section text-align-center">
+        <div class="banner-headings">
+          <h1 class="heading">Welcome to JioBank</h1>
+          <h2 class="sub-heading p-top-bottom-10">Bank with ease</h2>
+        </div>
+        <div class="banner-section-img p-top-bottom-10">
+          <img src="./assets/images/jiobank banner photo.webp" alt="" />
+        </div>
+        <div class="banner-section-para p-top-bottom-10">
+          <p class="para">
+            Bank from the comfort of your home or on the go. Access your
+            account,
+            <span style="display: block">
+              make transactions, and more with just a few clicks with JioBank.
+            </span>
+          </p>
+        </div>
+        <div class="get-the-app-btn">
+          <a href="#" class="primary-btn">Get the app</a>
+        </div>
+      </section>
+      <!-- Banner section end-->
+
+      <!-- Digital account and debit cart section satrt-->
+      <section class="zero-balance_and_debit-card-account-section p-tp-btm-50px">
+        <div class="digital-zero-balance d-flex justify-content-center align-item-center gap-30">
+          <!-- digital-zero-balance-img-block -->
+          <div class="digital-zero-balance-img-block flex">
+            <img src="./assets/images/zero-balance.jpg" alt="" />
+          </div>
+          <!-- digital-zero-balance-text-block -->
+          <div class="digital-zero-balance-text-block flex">
+            <h3 class="second-sub-heading p-top-bottom-10">
+              Digital zero balance account
+            </h3>
+            <p class="p-top-bottom-10">
+              Open a JioBank account with no minimum balance. Thus, making
+              banking accessible to a larger section of the society.
+            </p>
+            <div class="explore p-top-bottom-10">
+              <a href="#" class="primary-btn">Expolre</a>
+            </div>
+          </div>
+        </div>
+        <!-- jio-debit-card -->
+        <div class="jio-debit-card d-flex justify-content-center gap-30 align-item-center">
+          <div class="jio-debit-card-text-block flex">
+            <h3 class="second-sub-heading p-top-bottom-10">
+              Jio Platinum Debit Card
+            </h3>
+            <p class="p-top-bottom-10">
+              Convenience is the key. Here is a smart and secure way to make transactions with exciting offers and much
+              more.
+            </p>
+            <div class="explore p-top-bottom-10">
+              <a href="#" class="primary-btn">Expolre</a>
+            </div>
+          </div>
+          <div class="jio-debit-card-img-block flex">
+            <img src="./assets/images/debit-card.jpg" alt="">
+          </div>
+        </div>
+      </section>
+      <!-- Digital account and debit cart section end-->
+
+      <!-- Why bank on us section sart -->
+      <section class="why-bank-on-us-section p-top-bottom-10">
+        <div class="why-bank-on-us-section-headings text-align-center">
+          <h2 class="sub-heading p-top-bottom-10">Why bank on us?</h2>
+          <p class="para">JioBank offers round-the clock customer support to assist users with account related issues
+            <span style="display: block">or transaction inquiries.</span>
+          </p>
+        </div>
+        <div class="jio-bank-benefit d-flex justify-content-center gap-30 align-item-center ">
+          <div class="jio-bank-benefit-text-block flex">
+            <!-- jio-bank-benefit1 -->
+            <div class="bank-benefits__item">
+              <div class="d-flex gap-20">
+                <img src="./assets/images/check.png" alt="">
+                <div class="bank-benefits__title">
+                  <h3>Hassle-free process</h3>
+                  <p>100% digital banking, 0% hassle.</p>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <!-- jio-bank-benefit2 -->
+            <div class="bank-benefits__item p-t-10px">
+              <div class="d-flex gap-20">
+                <img src="./assets/images/check.png" alt="">
+                <div class="bank-benefits__title">
+                  <h3>No hidden charges</h3>
+                  <p>Completely transparent process.</p>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <!-- jio-bank-benefit3 -->
+            <div class="bank-benefits__item p-t-10px">
+              <div class="d-flex gap-20">
+                <img src="./assets/images/check.png" alt="">
+                <div class="bank-benefits__title">
+                  <h3>Instant access</h3>
+                  <p>Start transacting as soon as you open your account.</p>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <!-- jio-bank-benefit4 -->
+            <div class="bank-benefits__item p-t-10px">
+              <div class="d-flex gap-20">
+                <img src="./assets/images/check.png" alt="">
+                <div class="bank-benefits__title">
+                  <h3>Secure</h3>
+                  <p>Safer digital transactions.</p>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <!-- jio-bank-benefit5 -->
+            <div class="bank-benefits__item p-t-10px">
+              <div class="d-flex gap-20">
+                <img src="./assets/images/check.png" alt="">
+                <div class="bank-benefits__title">
+                  <h3>Convenience</h3>
+                  <p>A bank that is open 24/7.</p>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </div>
+          <div class="jio-bank-benefit-img-block flex">
+            <img src="./assets/images/bank-on-us-desk.jpg" alt="">
+          </div>
+        </div>
+      </section>
+      <!-- Why bank on us section end -->
+
+      <!-- Banking and personal finance start -->
+      <section class="banking_and_personal-finance p-tp-btm-50px">
+        <div class="banking_and_personal-finance-headings text-align-center">
+          <h2 class="sub-heading ">Banking and personal finance</h2>
+          <p class="para p-t-10px">Learn the skills and strategies to take control of your finances, make smarter
+            banking <span style="display: block">decisions, and build a secure financial future</span></p>
+        </div>
+        <!-- banking_and_personal-finance-blog -->
+        <div class="banking_and_personal-finance-blog ">
+          <div class="banking_and_personal-finance-blog-heading">
+            <h2 class="sub-heading p-top-bottom-10">Blog</h2>
+          </div>
+          <div class="all-blogs d-flex justify-content-center gap-30">
+            <!-- blog1 -->
+            <div class="blog flex">
+              <div class="blog-head">
+                <img src="./assets/images/blog1.jpg" alt="">
+              </div>
+              <div class="blog-text p-top-bottom-10">
+                <h3>AEPS cash withdrawal: What it is and how it works</h3>
+              </div>
+              <div class="blog-footer p-t-10px">
+                <a href="#">Read more</a>
+              </div>
+            </div>
+            <!-- blog2-->
+            <div class="blog flex">
+              <div class="blog-head">
+                <img src="./assets/images/blog2.jpg" alt="">
+              </div>
+              <div class="blog-text p-top-bottom-10">
+                <h3>How to open a Savings account online</h3>
+              </div>
+              <div class="blog-footer p-t-10px">
+                <a href="#">Read more</a>
+              </div>
+            </div>
+            <!-- blog3 -->
+            <div class="blog flex">
+              <div class="blog-head">
+                <img src="./assets/images/blog3.jpg" alt="">
+              </div>
+              <div class="blog-text p-top-bottom-10">
+                <h3>Different types of Savings account</h3>
+              </div>
+              <div class="blog-footer p-t-10px">
+                <a href="">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Banking and personal finance end-->
+
+      <!-- jio finance section start -->
+      <div class="jio-finance d-flex">
+        <div class="jio-finance-content ">
+          <div class="jio-finance-heading d-flex gap-20">
+            <img src="./assets/images/check.png" alt="">
+            <h2>JioFinance</h2>
+          </div>
+          <div class="jio-finance-sub-heading p-t-10px">
+            <h3>Finance made simpler!</h3>
+          </div>
+          <div class="jio-finance-para p-top-bottom-10">
+            <p>The JioFinance App puts everything at your fingertips.</p>
+          </div>
+          <div class="jio-finance-btn p-t-10px ">
+            <a href="#" class="primary-btn">Get the app</a>
+          </div>
+        </div>
+      </div>
+      <!-- jio finance section end -->
+    </div>
+  </div>
+  <!-- Footer start -->
+  <footer>
+  <div class="container">
+  <!-- for responsive screen -->
+   <!--footer-slider satrt  -->
+   <div class="footer-slider" 
+    x-data="{ activeIndex: null,open: false }">
+   <div class="footer-slider-content">
+          <div 
+          @click="activeIndex === 0 ? activeIndex = null : activeIndex = 0,open = !open
+           " class="footer-content-header  align-item-center">
+            <h3>Useful Links</h3>
+           <div class="footer-slider-icon">
+             <i class="bi":class="open ? 'bi-dash' : 'bi-plus' "></i>
+             </div>
+          </div>
+          <div x-show="activeIndex === 0 " class="footer-content-bottom">
+            <ul>
+            <li><a href="#">Interest Rates & Service Charges</a></li>
+            <li><a href="#">Claim Form</a></li>
+            <li><a href="#">Complaint Form</a></li>
+            <li><a href="#">Grievance Redressal</a></li>
+            <li><a href="#">Reporting Unauthorised Transactions</a></li>
+            <li><a href="#">List of Bharat Bill Payment Operating Unit - Agent Institution(s)</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">RBI Kehta Hai</a></li>
+          </ul>
+          </div>
+          <hr>
+        </div>
+       <div class="footer-slider-content p-t-10px">
+          <div @click="activeIndex === 1 ? activeIndex = null : activeIndex = 1,
+          open = !open
+          " class="footer-content-header">
+             <h3>Our Company</h3>
+             <div class="footer-slider-icon">
+             <i class="bi":class="open ? 'bi-dash' : 'bi-plus' "></i>
+           </div>
+          </div>
+          <div x-show="activeIndex === 1" class="footer-content-bottom">
+         <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Top Management</a></li>
+            <li><a href="">Investor Relations</a></li>
+            <li><a href="">Regulatory Disclosure</a></li>
+          </ul>
+          </div>
+           <hr>
+        </div>
+       <div class="footer-slider-content p-t-10px">
+          <div @click="activeIndex === 2 ? activeIndex = null : activeIndex = 2,
+          open = !open
+          " class="footer-content-header">
+            <h3>Banking Outlets</h3>
+              <div class="footer-slider-icon">
+            <i class="bi":class="open ? 'bi-dash' : 'bi-plus' "></i>
+           </div>
+          </div>
+          <div x-show="activeIndex === 2" class="footer-content-bottom">
+           <ul>
+            <li><a href="">List of Banking Outlets</a></li>
+            <li><a href="">Details of Business Correspondent</a></li>
+            <li><a href="">DGRO Sitting Location & Visit Schedule</a></li>
+          </ul>
+        </div>
+        <hr>
+        </div>
+        <div class="footer-slider-content p-t-10px">
+          <div @click="activeIndex === 3 ? activeIndex = null : activeIndex = 3,
+          open = !open
+          " class="footer-content-header">
+            <h3>Legal</h3>
+             <div class="footer-slider-icon">
+            <i class="bi":class="open ? 'bi-dash' : 'bi-plus' "></i>
+           </div>
+          </div>
+          <div x-show="activeIndex === 3" class="footer-content-bottom">
+            <ul>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">UPI Terms & Conditions</a></li>
+            <li><a href="">UPI User Guidelines</a></li>
+            <li><a href="">Merchant Terms & Conditions for UPI</a></li>
+            <li><a href="">Key Policies</a></li>
+          </ul>
+          </div>
+          <hr>
+        </div>
+        <div class="footer-slider-content p-top-bottom-10">
+          <div @click="activeIndex === 4 ? activeIndex = null : activeIndex = 4,
+          open = !open
+          " class="footer-content-header">
+            <h3>Support</h3>
+              <div class="footer-slider-icon">
+             <i class="bi":class="open ? 'bi-dash' : 'bi-plus' "></i>
+           </div>
+          </div>
+          <div x-show="activeIndex === 4" class="footer-content-bottom">
+           <ul>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Emailwe.care@jiobank.in</a></li>
+            <li><a href="">Helpline No.1800 890 7070</a></li>
+          </ul>
+          </div>
+          <hr>
+        </div>
+        </div>
+        <!--footer-slider end for responsive-->
+      <div class="footer-contents d-flex gap-30">
+      <!-- 1 -->
+       <div class="footer-content-div1 d-flex gap-10">
+         <!-- usefull-link -->
+        <div class="footer-content flex">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">Interest Rates & Service Charges</a></li>
+            <li><a href="#">Claim Form</a></li>
+            <li><a href="#">Complaint Form</a></li>
+            <li><a href="#">Grievance Redressal</a></li>
+            <li><a href="#">Reporting Unauthorised Transactions</a></li>
+            <li><a href="#">List of Bharat Bill Payment Operating Unit - Agent Institution(s)</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">RBI Kehta Hai</a></li>
+          </ul>
+        </div>
+        <!-- our-company -->
+        <div class=" footer-content flex">
+          <h3>Our Company</h3>
+          <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Top Management</a></li>
+            <li><a href="">Investor Relations</a></li>
+            <li><a href="">Regulatory Disclosure</a></li>
+          </ul>
+        </div>
+        <!-- banking-outlets -->
+        <div class="footer-content flex">
+          <h3>Banking Outlets</h3>
+          <ul>
+            <li><a href="">List of Banking Outlets</a></li>
+            <li><a href="">Details of Business Correspondent</a></li>
+            <li><a href="">DGRO Sitting Location & Visit Schedule</a></li>
+          </ul>
+        </div>
+        <!-- legal -->
+        <div class=" footer-content flex">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">UPI Terms & Conditions</a></li>
+            <li><a href="">UPI User Guidelines</a></li>
+            <li><a href="">Merchant Terms & Conditions for UPI</a></li>
+            <li><a href="">Key Policies</a></li>
+          </ul>
+        </div>
+        <!-- support -->
+        <div class=" footer-content flex">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Emailwe.care@jiobank.in</a></li>
+            <li><a href="">Helpline No.1800 890 7070</a></li>
+          </ul>
+        </div>
+       </div>
+       <!-- 2 -->
+       <div class="footer-content-div2">
+        <!-- contact-with-us -->
+        <div class="contact-with-us footer-content">
+          <h3>Connect with us</h3>
+          <!-- social-media-links -->
+          <div class="social-media-links">
+            <ul class="d-flex">
+              <li><a href=""><img src="./assets/images/facebook.png" alt=""></a></li>
+              <li><a href=""><img src="./assets/images/instagram.png" alt=""></a></li>
+              <li><a href=""><img src="./assets/images/linkedin.png" alt=""></a></li>
+              <li><a href=""><img src="./assets/images/youtube.png" alt=""></a></li>
+              <li><a href=""><img src="./assets/images/twitter.png" alt=""></a></li>
+            </ul>
+          </div>
+          <!-- get the app -->
+          <div class="footer-get-the-app">
+            <div class="footer-get-the-app-heading">
+              <h3>Get the app</h3>
+            </div>
+            <div class="platform d-flex gap-10">
+              <img src="./assets/images/playstore.svg" alt="">
+              <img src="./assets/images/appstore.svg" alt="">
+            </div>
+          </div>
+        </div>
+       </div>
+        </div>
+    </div>
+    
+    </div>
+  </footer>
+  <!-- Footer end -->
+</body>
+
+</html>

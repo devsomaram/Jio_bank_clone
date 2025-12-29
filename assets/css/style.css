@@ -1,0 +1,253 @@
+@import url(./reset.css);
+@import url(./utility.css);
+@import url(./responsive.css);
+/* menu slider */
+.menu-slider{
+  position: fixed;
+  width:100%;
+  height:100%;
+ background-color: #fff;
+  transform: translate(-1600px);
+  transition: 0.5s ease;
+  z-index: 99999;
+}
+.show{
+ transform: translateX(0);
+transition: 0.5s;
+}
+.menu-slider-close-btn a{
+  color: #141414;
+  position: absolute;
+   top: 10px;
+  right: 20px;
+  font-size: 25px;
+ 
+}
+.smooth{
+  transition: 0.5s ease;
+}
+.menu-close-btn{
+  position: relative;
+
+  }
+.menu-slider ul{
+  flex-direction: column;
+ padding-top: 50px;
+}
+.menu-slider hr{
+    border: none;
+  height: 1px;
+ background-color: #e3e3df;
+}
+.menu-slider ul li img{
+  width: 20px;
+  height: 20px;
+}
+
+.menu-slider ul li a{
+  color: #2d2c2c;
+  padding: 5px;
+}
+.menu-slider .menu-list{
+  display: flex;
+  justify-content: space-between;
+}
+/* Header */
+header {
+  background-color: inherit;
+}
+.brand-logo .menu-icon img{
+width: 20px;
+height: 20px;
+}
+header .brand-logo img {
+  width: 40px;
+  height: 40px;
+}
+header .brand-logo a span {
+  font-size: clamp(1.8rem, calc(7vw, 1rem), 5rem);
+  color: #000;
+  font-weight: 800;
+}
+header nav ul li a {
+  color: #454444;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.list-hover:hover {
+  color: #141414;
+  transition: 0.05s;
+  border-bottom: 2px solid #efb96a;
+}
+.active {
+  border-bottom: 2px solid #efb96a;
+}
+/* Banner-section */
+.all-section-wrap {
+  background-color: #ffffff;
+}
+.banner-headings {
+  text-align: center;
+}
+.banner-section-img img {
+  border-radius: 20px;
+}
+.banner-section .get-the-app-btn {
+  padding: 25px 0px;
+}
+/* Digital account and debit cart section */
+.zero-balance_and_debit-card-account-section img {
+  border-radius: 20px;
+}
+.digital-zero-balance-text-block p {
+  font-size: 16px;
+  color: #2d2c2c;
+  font-weight: 500;
+}
+.jio-debit-card-text-block p {
+  font-size: 16px;
+  color: #2d2c2c;
+  font-weight: 500;
+}
+.digital-zero-balance {
+  padding-bottom: 30px;
+}
+.jio-debit-card {
+  padding-top: 30px;
+}
+/* Why bank on us section sart  */
+.jio-bank-benefit {
+  padding-top: 40px;
+}
+.jio-bank-benefit-text-block hr{
+  border: none;
+  height: 1px;
+ background-color: #e3e3df;
+}
+.bank-benefits__item img {
+  width: 30px;
+  height: 30px;
+  background-color: #ac660c;
+  padding: 6px;
+  border-radius: 50%;
+}
+.bank-benefits__item h3 {
+  padding: 5px 0px;
+}
+.bank-benefits__item p {
+  padding-bottom: 15px;
+  color: #454444;
+}
+.jio-bank-benefit-img-block img {
+  border-radius: 20px;
+}
+/* banking_and_personal-finance-blog  */
+.banking_and_personal-finance-blog {
+  padding-top: 40px;
+}
+.blog {
+  background-color: #fef7ef;
+  padding: 15px;
+  border-radius: 15px;
+  
+}
+.blog h3 {
+  font-size: 25px;
+  font-weight: 800;
+}
+.blog img {
+  height: 200px;
+  border-radius: 8px;
+}
+
+.all-blogs .blog a {
+  color: #9f6d2b;
+  padding: 10px 13px;
+  border: 1px solid #d6bfa0;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+}
+/* jio finance section */
+.jio-finance {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0) 50%
+    ),
+    url("/assets/images/jiofinance-desk.jpg");
+  background-size: cover;
+  height: 400px;
+   border-radius: 20px;
+  padding: 25px;
+}
+.jio-finance-content {
+  align-content: center;
+  color: #ffffff;
+}
+.jio-finance-heading h2 {
+  font-size: 20px;
+}
+.jio-finance-sub-heading h3 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.jio-finance-para {
+  font-size: 16px;
+}
+
+/* footer */
+/* footer slider for responsive screen satrt */
+
+ .footer-slider ul li a{
+  padding:10px 4px;
+  color: #454444;
+  font-size: 14px;
+    }
+  .footer-slider h3{
+  font-weight: 800;
+  padding: 10px 0px;
+  color: #2d2c2c;
+     }
+    .footer-content-header {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .footer-slider-content i {
+      color: rgb(222, 142, 12);
+      font-size: 20px;
+    }
+/* footer slider for responsive screen end */
+.contact-with-us{
+  width: 300px;
+}
+.contact-with-us h3{
+  font-size: 25px;
+}
+.footer-content h3{
+  font-weight: 800;
+  padding: 10px 0px;
+  color: #2d2c2c;
+}
+.footer-content ul li a{
+  padding:10px 4px;
+  color: #454444;
+  font-size: 14px;
+  
+}
+.footer-content ul li a:hover{
+  background-color: #bab7b7;
+}
+.contact-with-us .social-media-links img{
+  width: 30px;
+  height: 30px;
+  background-color: #d48609;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+
+
+
+
